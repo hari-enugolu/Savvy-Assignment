@@ -4,11 +4,11 @@ import "./WeatherDetails.css"
 import ThunderstormIcon from '@mui/icons-material/Thunderstorm';
 import WbSunnyIcon from '@mui/icons-material/WbSunny';
 import WindPowerIcon from '@mui/icons-material/WindPower';
-import { TextField, Button,Typography,Box } from '@mui/material';
+import {Typography,Box } from '@mui/material';
 
 const WeatherDetailsPage = () => {
-    const location = useLocation();
-    const { weatherData } = location.state || {};
+    const location = useLocation();  //useLocation to get the current location object.
+    const { weatherData } = location.state || {}; // calling the weather data that is coming from Dashboard component
 
     const renderWeatherDetail = (label, value, icon) => (
         <Box className="weather-detail">

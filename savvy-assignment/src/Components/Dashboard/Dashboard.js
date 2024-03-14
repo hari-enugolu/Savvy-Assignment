@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
-import './Dashboard.css'; // Import the CSS file
+import './Dashboard.css';
   import { TextField, Button,Typography,Box } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 
 const Dashboard = () => {
 
-  const [weatherData, setWeatherData] = useState(null);
-  const navigate = useNavigate();
+  const [weatherData, setWeatherData] = useState(null);   //useState to store data
+  const navigate = useNavigate();                          //useNavigate to navigate to another page
+
+//API functionality to fetch the data 
 
   const handleGetWeather = async () => {
     try {
@@ -19,8 +21,7 @@ const Dashboard = () => {
       const data = await response.json();
       setWeatherData(data);
       console.log("Weather data",data)
-      // Navigate to the WeatherDetailsPage with weather data
-      navigate('/weather-details', { state: { weatherData: data } });
+      navigate('/weather-details', { state: { weatherData: data } });       // Navigate to the WeatherDetailsPage with weather data
     } catch (error) {
       console.error(error);
     }
@@ -28,8 +29,8 @@ const Dashboard = () => {
 
   return (
     <Box className="dashboard-container">
-      <Box className="background-image"></Box>  {/* Container for background image */}
-      <Box className='search-container'>  {/* Container for search bar and button */}
+      <Box className="background-image"></Box>
+      <Box className='search-container'>
       <Typography sx={{fontSize:80,color:'#112e66',}}>Weather Forecast</Typography>
         <TextField
         size="small"
@@ -52,11 +53,11 @@ const Dashboard = () => {
         />
         <Button
          sx={{
-          border: '1px solid black', // Set border to grey
-          color: '#112e66', // Set text color to grey
+          border: '1px solid black',
+          color: '#112e66',
           top:'50px'
         }}
-        onClick={handleGetWeather} // Call handleGetWeather on button click
+        onClick={handleGetWeather}
         >Get weather</Button>
       </Box>
     </Box>
