@@ -1,0 +1,55 @@
+As part of the selection process, below is the coding challenge  that you will need to complete and submit within the deadline of 2 days (48 hours)
+
+Images for UI reference are shared separately.
+
+
+Requirements:
+Dashboard:
+
+Create a dashboard with a search bar that allows users to enter the city and country names.
+Include a "Get Weather" button to trigger the weather information retrieval.
+
+Weather Details Page:
+
+When the "Get Weather" button is clicked, redirect the user to a details page.
+Display weather details including temperature, humidity, wind speed, and any additional information obtained from the API.
+
+API Integration:
+
+Use the OpenWeatherMap API for retrieving weather information.
+API Base URL: https://api.weatherbit.io/v2.0/history/energy?lat=38.0&lon=-78.0&start_date=2024-03-03&end_date=2024-03-10&threshold=63&units=I&key=[YOUR_API_KEY]&tp=daily
+API Key: 8ff6b1c427824112b02b9f92f1485bbb
+For the Search functionality read the documentation: https://www.weatherbit.io/api/weather-energy
+Material-UI:
+
+Implement the UI using Material-UI components for a clean and responsive design.
+Component Structure:
+
+Divide the functionality into reusable components. Consider creating components for the dashboard, weather details, and any other relevant parts of the app.
+Evaluation Criteria:
+Code Structure:
+
+Use a modular and organized folder/file structure.
+Separate components logically.
+React & Material-UI Usage:
+
+Efficient use of React features and hooks.
+Proper integration of Material-UI components.
+Responsive Design:
+
+Ensure that the app is responsive and works well on various screen sizes.
+API Integration:
+
+Successfully integrate the OpenWeatherMap API to fetch weather data.
+Error Handling:
+
+Implement error handling for API requests and user input.
+Code Comments and Documentation:
+
+Include meaningful comments and documentation for better code understanding.
+Submission Instructions:
+Fork this repository and provide a link to your repository.
+Deploye your application on https://www.netlify.com/ or https://vercel.com/ and share the application link
+Note:
+Feel free to add any extra features or improvements to showcase your skills.
+This assignment is designed to evaluate your understanding of React, Material-UI, and API integration.
