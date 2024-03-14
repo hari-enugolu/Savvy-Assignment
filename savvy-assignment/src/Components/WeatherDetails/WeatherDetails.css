@@ -1,0 +1,79 @@
+/* WeatherDetails.css */
+
+.weather-details-container {
+    position: relative;
+    min-height: 50vh;
+    background: url('../../../public/weather.webp') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .weather-card {
+    /* background-color: rgba(255, 255, 255, 0.9); */
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 700px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .weather-title {
+    font-size: 30px;
+    margin-top: 0;
+    color: #090909;
+
+  }
+  
+  .weather-day {
+    margin-bottom: 20px;
+  }
+  
+  .weather-date {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #e3ebe4;
+  }
+  
+  .weather-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .weather-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+  }
+  
+  .weather-icon1 {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 5px;
+    color: #ecd632;
+  }
+
+  .weather-icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 5px;
+    color: #ffffff;
+  }
+  
+  .weather-label {
+    font-size: 14px;
+    margin-bottom: 3px;
+    color: #ffffff;
+  }
+  
+  .weather-value {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  

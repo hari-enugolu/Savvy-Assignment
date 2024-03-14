@@ -1,0 +1,48 @@
+.dashboard-container {
+    display: flex;
+    min-height: 100vh;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .background-image {
+    background-image: url('../../../public/weather2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+
+  .search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+  
+  .search-bar {
+    padding: 10px;
+    border: 1px solid #db3030;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .search-button {
+    padding: 50px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #cdd14a;
+    cursor: pointer;
+  }
